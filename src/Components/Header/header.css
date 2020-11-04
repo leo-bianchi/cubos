@@ -1,0 +1,7 @@
+.header {
+  background-color: var(--dark-blue);
+  color: var(--neon-blue);
+  padding: 24px;
+  text-align: center;
+  width: 100%;
+}

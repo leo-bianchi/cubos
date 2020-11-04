@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import api from "./services/api";
+
+import Header from "./Components/Header/header";
+import Movie from "./Components/Movie/movie";
+import Search from "./Components/Search/search";
+import "./global.css";
 
 function App() {
+  useEffect(() => {
+    async function searchMovie() {
+      const response = await api.get("");
+
+      //setMovies(response.data);
+    }
+
+    searchMovie();
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <div className="container">
+        <Search />
+        <Movie />
+      </div>
     </div>
   );
 }

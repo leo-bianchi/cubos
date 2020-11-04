@@ -1,0 +1,41 @@
+:root {
+  --dark-blue: #116193;
+  --neon-blue: #00e7e3;
+  --grey-blue: #6b9cba;
+  --light-grey: #ebebeb;
+  --light-dark-grey: #a5a5a5;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  margin-bottom: 0;
+  max-width: 70%;
+}
+
+.row {
+  margin: 40px 0;
+}
