@@ -34,3 +34,10 @@
   color: #9fbbcc;
   font-size: 16px;
 }
+
+.search__bar:focus {
+  border-color: var(--dark-blue);
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+    0 0 8px rgba(0, 231, 227, 0.6);
+  outline: 0 none;
+}
